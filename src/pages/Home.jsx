@@ -1,4 +1,6 @@
 import React from 'react'
+import PrimaryButton from '../components/Buttons/PrimaryButton'
+import SecondaryButton from '../components/Buttons/SecondaryButton'
 
 const Home = () => {
   return (
@@ -8,6 +10,11 @@ const Home = () => {
     <div className="font-almarai font-normal">Embrace the Future, Where</div>
     <div className="font-almarai font-bold">Embrace the Future, Where</div> 
     <div className="font-almarai font-extrabold">Embrace the Future, Where</div>
+
+    <PrimaryButton/>
+    <PrimaryButton/>
+    <PrimaryButton/>
+    <SecondaryButton/>
     </div>
   )
 }

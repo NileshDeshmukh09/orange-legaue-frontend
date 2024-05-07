@@ -7,7 +7,6 @@ const ProtectedRoutes = () => {
   return (
     <div>
         <Header/>
-        <br />
         <Outlet/>
         <Footer/>
     </div>

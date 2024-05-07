@@ -1,25 +1,68 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";;
+import { NavLink, useLocation } from "react-router-dom";
+import PrimaryButton from "./Buttons/PrimaryButton";
 
 const Header = () => {
+  const location = useLocation();
 
-  const navigate = useNavigate();
-
-
-  const handleSubmit = () => {
-    navigate("/");
-  };
   return (
-    <nav className="bg-[#282c34] px-4 text-white  text-2xl h-[70px] flex justify-between items-center">
-      <h1 className=" font-bold text-[#00B386]" onClick={handleSubmit}>Orangle-league</h1>
-      <div className="flex sm:w-1/2 justify-between ">
-        <Link to="/" className="hover:text-red-200">
+    <nav className="bg-accent-white mx-2 sm:mx-auto sm:w-11/12 border-b flex justify-between items-center">
+      <h1 className="font-bold text-primary-orange" >
+        Orangle-league
+      </h1>
+      <div className="flex sm:w-1/2 justify-between text-accent-black">
+        <NavLink
+          to="/"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+          exact
+        >
           Home
-        </Link>
+        </NavLink>
 
-        <Link to="/services" className="hover:text-red-200">
-          Services 
-        </Link>
+        <NavLink
+          to="/services"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+        
+        >
+          Services
+        </NavLink>
+
+        <NavLink
+          to="/technologies"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+        >
+          Technologies
+        </NavLink>
+
+        <NavLink
+          to="/industries"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+        >
+          Industries
+        </NavLink>
+
+        <NavLink
+          to="/case-studies"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+        >
+          Case Studies
+        </NavLink>
+
+        <NavLink
+          to="/about-us"
+          className="hover:text-red-200"
+          activeClassName="text-red-500"
+        >
+          About us
+        </NavLink>
+      </div>
+      <div className="my-2">
+        <PrimaryButton />
       </div>
     </nav>
   );
