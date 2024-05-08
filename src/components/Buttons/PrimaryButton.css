@@ -6,24 +6,24 @@
 .primary-button-animation:hover {
   animation-name: example;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   
 }
 
 @keyframes example {
   0% {
-    background-image: linear-gradient(to right, #ffd60c, #f15d27);
+    background-image: linear-gradient(90deg, #ffd60c , #f15d27 , #f15d27 );
     transition-duration: 300s;
   }
   25% {
-    background-image: linear-gradient(to right, #f15d27, #ffd60c);
+    background-image: linear-gradient(90deg, #f15d27 , #ffd60c, #ffd60c );
   }
   50% {
-    background-image: linear-gradient(to right, #ffd60c, #f15d27);
+    background-image: linear-gradient(90deg, #ffd60c , #f15d27, #f15d27 );
    
   }
   100% {
-    background-image: linear-gradient(to right, #f15d27, #ffd60c);
+    background-image: linear-gradient(90deg, #f15d27 , #ffd60c , #ffd60c );
    
   }
 }
