@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import imageUrls from "../../constants/imageUrls";
 
 const navLinkClasses = "font-almarai font-normal nav-link";
 const activeNavLinkClasses = "text-primary-yellow font-almarai font-bold";
@@ -8,7 +9,7 @@ const activeNavLinkClasses = "text-primary-yellow font-almarai font-bold";
 const Header = () => {
   return (
     <nav className="bg-accent-white mx-2 sm:mx-auto sm:w-11/12 border-b flex justify-between items-center">
-      <h1 className="font-bold text-primary-orange">Orange-league</h1>
+      <img src={imageUrls.companyLogo} alt="logo" className="h-10"/>
       <div className="flex sm:w-1/2 justify-between text-accent-black">
         <NavLink to="/" className={({ isActive }) => (isActive ? activeNavLinkClasses : navLinkClasses)}>
           Home

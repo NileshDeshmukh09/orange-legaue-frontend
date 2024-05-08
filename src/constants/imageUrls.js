@@ -9,6 +9,10 @@ const imageUrls = {
     deployment : "/images/Deployment.svg",
     qa : "/images/QA.svg",
     ux : "/images/UX.svg",
+    companyLogo : "/images/CompanyLogo.svg",
+    laptop : "/images/Laptop.png",
+    founder1 : "/images/founder1.svg",
+    vision : "/images/ourvision.png",
   };
   
   export default imageUrls;

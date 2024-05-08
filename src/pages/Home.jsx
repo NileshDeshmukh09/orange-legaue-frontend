@@ -1,22 +1,19 @@
-import React from 'react'
-import PrimaryButton from '../components/Buttons/PrimaryButton'
-import SecondaryButton from '../components/Buttons/SecondaryButton'
-
+import React from "react";
+import OurExpertise from "../components/Home/OurExpertise";
+import WelcomeSection from "../components/Home/WelcomeSection";
+import IndustriesWeServe from "../components/Home/IndustriesWeServe";
+import OurTeam from '../components/Home/OurTeam' 
+import OurVision from "../components/Home/OurVision";
 const Home = () => {
   return (
-    <div className='text-[#0A0A0A]'>
-
-    <div className="font-almarai font-light ">Embrace the Future, Where</div>
-    <div className="font-almarai font-normal">Embrace the Future, Where</div>
-    <div className="font-almarai font-bold">Embrace the Future, Where</div> 
-    <div className="font-almarai font-extrabold">Embrace the Future, Where</div>
-
-    <PrimaryButton/>
-    <PrimaryButton/>
-    <PrimaryButton/>
-    <SecondaryButton/>
+    <div className="text-[#0A0A0A]">
+      <WelcomeSection />
+      <OurExpertise />
+      <IndustriesWeServe/>
+      <OurTeam/>
+      <OurVision/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
